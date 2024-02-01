@@ -10,5 +10,5 @@ jobs:
       - name: Build and push the image
         run: |
           docker login --username Neha-Reddy-08 --password ${{secrets.ACCESS_TOKEN}} ghcr.io
-          docker build -t ghcr.io/Neha-Reddy-08/arithmetic-service:latest --file Dockerfile .
-          docker push ghcr.io/Neha-Reddy-08/arithmetic-service:latest
+          docker build -t ghcr.io/neha-reddy-08/arithmetic-service:latest --file Dockerfile .
+          docker push ghcr.io/neha-reddy-08/arithmetic-service:latest
