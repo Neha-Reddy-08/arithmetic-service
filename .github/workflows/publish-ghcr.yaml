@@ -9,7 +9,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2 # Update to v2 or later
       - name: Set up Node.js
-        uses: actions/setup-node@v3 # Update to v3 or later
+        uses: actions/setup-node@v4 # Update to v3 or later
         with:
           node-version: "14"
       - name: Build and push the image
