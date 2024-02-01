@@ -6,12 +6,7 @@ jobs:
   build_and_publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2 # Update to v2 or later
-      - name: Set up Node.js
-        uses: actions/setup-node@v4 # Update to v3 or later
-        with:
-          node-version: "14"
+      - uses: actions/checkout@v3
       - name: Build and push the image
         run: |
           docker login --username Neha-Reddy-08 --password ${{secrets.ACCESS_TOKEN}} ghcr.io
