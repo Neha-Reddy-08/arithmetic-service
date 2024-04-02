@@ -1,8 +1,9 @@
+require('dotenv').config();
 const express = require('express');
 const cors=require('cors');
 const {addnum} = require("./arithmetica");
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
  // Serve static files from the 'public' directory
 app.use(cors());

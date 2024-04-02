@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator Form</title>
+    <style>
+        .column {
+           float: left;
+           width: 50%;
+           padding: 10px;
+           box-sizing: border-box;
+          
+        }
+        .row::after {
+           content: "";
+           clear: both;
+           display: table;
+        }
+     </style>
 </head>
 <body>
     <h1> Arithmetic sum </h1>
@@ -14,6 +28,16 @@
             <button type="button" onclick=addnum()>=</button>
             <label id="sum"></label>
         </section>
+        <div class="column">
+            <section>
+                <h2>Prime check</h2>                
+                <label>Number to test:</label>
+                <input id="numberToTest"/>
+                <button onclick="isPrime()">Check</button>
+                <label id="primeCheckResult"></label>  
+            </section>           
+        </div>       
+     </div>
 
     <script>
             async function addnum(){
