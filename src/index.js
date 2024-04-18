@@ -6,6 +6,7 @@ const app = express();
 const port = process.env.PORT;
 
  // Serve static files from the 'public' directory
+ //
 app.use(cors());
 app.get('/', (req, res) => {
     res.send('Arithmetic service - Hello world!');
